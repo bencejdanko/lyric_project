@@ -1,8 +1,11 @@
-# Chunking instructions:
+# spotify-and-lyrics-dataset-generator
 
-Download dataset from https://www.kaggle.com/datasets/razauhaq/english-songs-lyrics (1.8 GB zipped)
+A set of helper scripts to combine song attributes provided by Spotify to lyrics sourcable on LyricGenius.
 
-Produce chunks with convert-to-parquet
+The Spotify API provides a series of attributes for song-artist search pairings:
+- popularity
+- danceability
+- energy
+- etc...
 
-A 50MB chunk has been included
-df_chunk_16.parquet.brotli
+However, they do not actually provide lyrics alongside the response. These scripts help scrape and join lyrics to the Spotify entries.
